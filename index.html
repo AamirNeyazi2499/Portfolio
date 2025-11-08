@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aamir Neyazi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Aamir Neyazi</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Hi, I'm Aamir Neyazi</h2>
+        <p>B.Tech CSE Student | Aspiring Data Scientist | Web Developer</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a B.Tech Computer Science Engineering student with a passion for Data Science, Web Development, and Machine Learning. I'm constantly learning and exploring new technologies to build innovative solutions.</p>
+                <p>Currently, I'm focusing on mastering Machine Learning algorithms, building web applications, and strengthening my problem-solving skills through Data Structures and Algorithms.</p>
+                <p>I believe in continuous learning and applying theoretical knowledge to real-world projects. My goal is to become a skilled Data Scientist who can derive meaningful insights from data.</p>
+            </div>
+            <div class="profile-img"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Learning</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🤖 Machine Learning</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>Pandas & NumPy</li>
+                    <li>Data Visualization</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>💻 Web Development</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>📊 DSA & Programming</h3>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Algorithms</li>
+                    <li>Problem Solving</li>
+                    <li>C++/Java</li>
+                    <li>Competitive Programming</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img project1-img"></div>
+                <div class="project-content">
+                    <h3>BlogSphere</h3>
+                    <p>A full-stack blog system web application built with Flask, SQLAlchemy, HTML, CSS, and Bootstrap. Features include user authentication, CRUD operations, and responsive UI.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img project2-img"></div>
+                <div class="project-content">
+                    <h3>Car Price Predictor</h3>
+                    <p>A simple model that predict car price based on the user selection. Simple user interface</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img project3-img"></div>
+                <div class="project-content">
+                    <h3>To-Do</h3>
+                    <p>A simple To-Do application using Flask, HTML, CSS, Bootstrap. Where a user can add, update and manage the task on user dashboard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>I'm always open to discussing new projects, opportunities, or collaborations. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:aamirneyazi93@gmail.com" class="contact-link">📧 Email</a>
+                <a href="https://linkedin.com/in/aamirneyazi" class="contact-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/aamirneyazi2499" class="contact-link" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aamir Neyazi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
