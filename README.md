@@ -7,7 +7,7 @@ It showcases skills, projects, and contact information in a clean and modern lay
 
 ## 📸 Live Demo
 
-[View Portfolio](https://your-portfolio-demo-link.netlify.app)
+[View Portfolio](https://neyazi.netlify.app/)
 
 ---
 
