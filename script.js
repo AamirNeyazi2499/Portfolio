@@ -4,9 +4,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const offsetTop = target.offsetTop - 80; // Offset for fixed navbar
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
             });
         }
     });
@@ -59,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all skill cards and project cards
-document.querySelectorAll('.skill-card, .project-card').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .education-card, .achievement-card').forEach(el => {
     observer.observe(el);
 });
 

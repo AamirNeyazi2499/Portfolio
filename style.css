@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -87,11 +92,19 @@ nav a:hover {
     font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 1.4s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode button styling */
+body.dark-mode .btn {
+    background: #8b9eff;
+    color: #0d0d0d;
 }
 
 /* Sections */
@@ -138,6 +151,90 @@ section h2 {
     justify-content: center;
     font-size: 5rem;
     color: #fff;
+}
+
+/* Education Section */
+#education {
+    background: #f8f9fa;
+}
+
+.education-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.education-icon {
+    font-size: 3rem;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-content h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.education-content h4 {
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.education-date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+body.dark-mode #education {
+    background: #0d0d0d;
+}
+
+body.dark-mode .education-card {
+    background: #2a2a2a;
+}
+
+body.dark-mode .education-content h3 {
+    color: #8b9eff;
+}
+
+body.dark-mode .education-content h4 {
+    color: #b0b0b0;
+}
+
+body.dark-mode .education-content p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .education-date {
+    color: #999;
 }
 
 /* Skills Section */
@@ -235,6 +332,67 @@ section h2 {
 .project-card h3 {
     color: #2c3e50;
     margin-bottom: 1rem;
+}
+
+/* Achievements & Certifications Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.achievement-org {
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.achievement-card p:last-child {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+body.dark-mode .achievement-card {
+    background: #2a2a2a;
+}
+
+body.dark-mode .achievement-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .achievement-org {
+    color: #8b9eff;
+}
+
+body.dark-mode .achievement-card p:last-child {
+    color: #e0e0e0;
 }
 
 /* Contact Section */
@@ -432,5 +590,18 @@ body.dark-mode footer {
     .about-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-icon {
+        margin: 0 auto;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
     }
 }
