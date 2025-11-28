@@ -48,4 +48,4 @@ portfolio/
 ### 👤 Author
 Aamir Neyazi   
 📧 Email: aamirneyazi93@gmail.com   
-💼 LinkedIn: https://www.linkedin.com/in/aamirneyazi/
+💼 LinkedIn: https://www.linkedin.com/in/aamirneyazi/ 
