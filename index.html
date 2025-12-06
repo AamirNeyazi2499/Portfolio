@@ -15,10 +15,11 @@
             <ul id="navMenu">
                 <li><a href="#home" onclick="closeMenu()">Home</a></li>
                 <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#education" onclick="closeMenu()">Education</a></li>
                 <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
                 <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
-                <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                <li><a href="#github" onclick="closeMenu()">GitHub</a></li>
                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
             <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
@@ -48,6 +49,31 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-card">
+                <div class="education-icon">🎓</div>
+                <div class="education-content">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <h4>Sharda University</h4>
+                    <p class="education-date">2023 - 2027 (Expected)</p>
+                    <p>Relevant Coursework: DSA, Machine Learning, Web Development</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">📚</div>
+                <div class="education-content">
+                    <h3>Higher Secondary Education (12th)</h3>
+                    <h4>Millat College Darbhanga</h4>
+                    <p class="education-date">2021</p>
+                    <p>Stream: Science (PCM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills & Learning</h2>
@@ -56,9 +82,9 @@
                 <h3>🤖 Machine Learning</h3>
                 <ul>
                     <li>Python</li>
-                    <li>NumPy, Pandas, Matplotlib, & Seaborn </li>
                     <li>Scikit-learn</li>
                     <li>TensorFlow</li>
+                    <li>Pandas & NumPy</li>
                     <li>Data Visualization</li>
                 </ul>
             </div>
@@ -78,7 +104,7 @@
                     <li>Data Structures</li>
                     <li>Algorithms</li>
                     <li>Problem Solving</li>
-                    <li>C++ & Java</li>
+                    <li>C++/Java</li>
                     <li>Competitive Programming</li>
                 </ul>
             </div>
@@ -100,14 +126,14 @@
                 <div class="project-img project2-img"></div>
                 <div class="project-content">
                     <h3>Car Price Predictor</h3>
-                    <p>A unique machine learning model (with user interface) that predict car price based on the user selection. Simple user interface.</p>
+                    <p>A simple model that predict car price based on the user selection. Simple user interface</p>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-img project3-img"></div>
                 <div class="project-content">
                     <h3>To-Do</h3>
-                    <p>A simple To-Do application using Flask, HTML, CSS, Bootstrap. Where a user can add, update delete and manage the task on user dashboard.</p>
+                    <p>A simple To-Do application using Flask, HTML, CSS, Bootstrap. Where a user can add, update and manage the task on user dashboard</p>
                 </div>
             </div>
         </div>
@@ -120,8 +146,8 @@
             <div class="achievement-card">
                 <div class="achievement-icon">🏆</div>
                 <h3>Hackathon Participation</h3>
-                <p class="achievement-org">Smart india Hackathon (SIH) 2025</p>
-                <p>Qualified for third round for developing an innovative ML-based solution</p>
+                <p class="achievement-org">SIH 2025</p>
+                <p>Participated in college-level hackathon for developing an innovative ML-based solution</p>
             </div>
             <div class="achievement-card">
                 <div class="achievement-icon">📜</div>
@@ -138,13 +164,13 @@
             <div class="achievement-card">
                 <div class="achievement-icon">⭐</div>
                 <h3>Competitive Programming</h3>
-                <p class="achievement-org">LeetCode and GFG </p>
-                <p>Solved 112+ problems across various platforms with strong ratings</p>
+                <p class="achievement-org">LeetCode & GFG </p>
+                <p>Solved 241+ problems across various platforms with strong ratings</p>
             </div>
             <div class="achievement-card">
                 <div class="achievement-icon">🎯</div>
                 <h3>Data Science Certificate</h3>
-                <p class="achievement-org">IBM</p>
+                <p class="achievement-org"> IBM</p>
                 <p>Professional certificate in data analysis and visualization techniques</p>
             </div>
             <div class="achievement-card">
@@ -156,29 +182,15 @@
         </div>
     </section>
 
-
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-timeline">
-            <div class="education-card">
-                <div class="education-icon">🎓</div>
-                <div class="education-content">
-                    <h3>Bachelor of Technology in Computer Science</h3>
-                    <h4>Sharda University</h4>
-                    <p class="education-date">2023 - 2027 (Expected)</p>
-                    <p>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Database Management, Web Development</p>
-                </div>
+    <!-- GitHub Activity Section -->
+    <section id="github">
+        <h2>GitHub Activity</h2>
+        <div class="github-container">
+            <div class="github-graph">
+                <img src="https://ghchart.rshah.org/667eea/aamirneyazi2499" alt="GitHub Contribution Graph">
             </div>
-            <div class="education-card">
-                <div class="education-icon">📚</div>
-                <div class="education-content">
-                    <h3>Higher Secondary Education (12th)</h3>
-                    <h4>Millat College Darbhanga </h4>
-                    <p class="education-date">2019-21 </p>
-                    <p>Stream: Science (PCM with Computer Science)</p>
-                </div>
+            <div class="github-link">
+                <a href="https://github.com/aamirneyazi2499" target="_blank" class="btn">View GitHub Profile</a>
             </div>
         </div>
     </section>
@@ -191,9 +203,8 @@
             <div class="contact-links">
                 <a href="mailto:aamirneyazi93@gmail.com" class="contact-link">📧 Email</a>
                 <a href="https://linkedin.com/in/aamirneyazi" class="contact-link" target="_blank">💼 LinkedIn</a>
-                <a href="https://github.com/aamirneyazi2499" class="contact-link" target="_blank">💻 GitHub</a>
-                <a href="https://instagram.com/aamir_._10" class="contact-link" target="_blank">📷 Instagram</a>
-                <a href="https://x.com/aamirneyazi" class="contact-link" target="_blank">𝕏 Twitter</a>
+                <a href="https://instagram.com/aamir_._10/" class="contact-link" target="_blank">📷 Instagram</a>
+                <a href="https://x.com/AamirNeyazi" class="contact-link" target="_blank">𝕏 Twitter</a>
             </div>
         </div>
     </section>
