@@ -374,6 +374,18 @@ body.dark-mode .education-date {
     margin-bottom: 1rem;
 }
 
+.project-link {
+    color: #4B664B;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.project-link:hover {
+    color: #5d7f5d;
+    text-decoration: underline;
+}
+
 /* Achievements & Certifications Section */
 .achievements-grid {
     display: grid;
