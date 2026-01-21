@@ -8,7 +8,7 @@ It showcases skills, projects, and contact information in a clean and modern lay
 ## 📸 Live Demo
 
 [View Portfolio](https://neyazi.netlify.app/)
-
+ 
 ---
 
 ## 🛠️ Tech Stack
