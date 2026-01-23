@@ -4,7 +4,7 @@ A fully responsive personal portfolio website built using **HTML**, **CSS**, and
 It showcases skills, projects, and contact information in a clean and modern layout.  
 
 ---
-
+ 
 ## 📸 Live Demo
 
 [View Portfolio](https://neyazi.netlify.app/)
